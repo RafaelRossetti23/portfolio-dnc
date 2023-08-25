@@ -4,7 +4,7 @@ import styles from "../page.module.css"
 const Servicos = ()=>{
     return(
         <div className={styles.servicos}>
-            <div className={styles.header_2}>
+            <div className={styles.header_2} id="servicos">
                 <p>conheça</p>
                 <h2>Meus Serviços</h2>
                 <p>Vou ajudar a sua empresa a alcançar grandes resultados.</p>

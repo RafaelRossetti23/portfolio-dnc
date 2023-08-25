@@ -3,7 +3,7 @@ import styles from "../page.module.css"
 
 const Portifolio = ()=>{
     return(
-        <div className={styles.portifolio}>
+        <div className={styles.portifolio} id="portfolio">
             <div className={styles.header_3}>
                 <p>Conheca meu trabalho.</p>
                 <h2>Portfólio</h2>

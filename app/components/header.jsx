@@ -9,9 +9,9 @@ const Header = ()=>{
             </div>
             <div className={styles.menu}>
                 <ul>
-                    <li><a href="#">Meus Servicos</a></li>
-                    <li><a href="#">Fale Comigo</a></li>
-                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#servicos">Meus Servicos</a></li>
+                    <li><a href="#fale-comigo">Fale Comigo</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
                 </ul>
             </div>
         </div>
