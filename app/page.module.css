@@ -21,19 +21,59 @@
   justify-items: center;
   align-items: center;
   
-  
 }
 .form_content {
-  
+   
   justify-self: center;
   text-align: left;
-}
 
+  padding-left: 50px;
+  
+}
+.form_content p:first-child{
+  color: #F75C4E;
+  font-weight: 700;
+}
+.form_content p{
+  color: #575455;
+  width: 85%;
+  
+}
+.form_img {
+  
+}
 .form_img img{
   border-radius: 50px;
   width: 500px;
-
 }
+.form form{
+  display: flex;
+  flex-direction: column;
+}
+.form input{
+  margin-top: 15px;
+  padding: 15px 30px;
+  color: #000;
+  border-radius: 50px;
+  background-color: #F5F6FB;
+  border: none; 
+}
+.form input::placeholder{
+  color: #575455;
+  font-weight: 400;
+  font-size: 16px;
+}
+.form button{
+  margin-top: 15px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #1F7CFF;
+  color: white;
+  font-size: 16px;
+  width: 180px;
+}
+
 .servicos{
   grid-area: servicos;
   display: grid;
