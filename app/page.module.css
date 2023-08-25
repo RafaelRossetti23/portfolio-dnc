@@ -290,16 +290,14 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-    padding: 0 15px 0 15px; 
+    padding: 0 20px 0 20px; 
     font-family: 'Poppins', sans-serif;
   }
   .header {
     grid-area: header;
     display: flex;
     flex-direction: column;
-    
     color: #070F18;
-    border: 1px dashed black;
   }
 
   .header h2{
@@ -312,28 +310,35 @@
  
   .title{
     order: 1;
-    border: 1px solid red;
     width: 100%;
     text-align: center;
     padding: 0;
-    font-size: 1.4em;;
+    font-size: 1.8em;
+    margin: -20px;
   }
   .menu{
     order: 2;
     padding: 0;
+    margin: 0;
     font-size: 1.3em;
+   
+    
     
   }
   .menu ul{
     padding: 0;
-
+    margin: 0;
   }
   .menu li{
-    display: inline-block;
-    width: 100%;    
+    box-sizing: border-box;
+    width: 100%;
     padding: 10px;
     margin: 0;
     text-align: center;
+    border-top: 1px solid black;
+  }
+  .menu li:last-child{
+    border-bottom: 1px solid black;
   }
   
   
@@ -341,7 +346,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px dashed red;
   }
   .content h1{
     text-align: center;
@@ -371,26 +375,38 @@
   .content img{
     padding: 20px;
   }
-  .clientes{
-    grid-area: clientes;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
+  .content1 {
+    order: 1;
+  }
+  .content2 {
+    order: 2;
   }
   .content2 img{
     border-radius: 50px;
     width: 300px;
   }
+  .clientes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;  
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-weight: 700;
+  }
+  .cliente {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
  
   .servicos{
-    grid-area: servicos;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header_2"
-                          "servico";    
+    display: flex;
+    flex-direction: column;
     text-align: center;  
+    padding: 20px;
+    border-bottom: 1px solid black;
                     
   }
   .servicos p:first-child{
@@ -410,10 +426,9 @@
   .icon svg{
     position: relative;
     top: -43px;
-      
   }
   .header_2 {
-    grid-area: header_2;
+    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -424,14 +439,14 @@
     margin: 10px auto;
   }
   .header_2 p{
-    width: 25%;
+    width: 100%;
   }
   .servico {
-    align-self: end;
-    padding: 30px;
+  
+    padding: 0;
   }
   .servico > div{
-    grid-area: servico;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,19 +457,17 @@
   }
 
   .form{
-    
+    padding-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    flex-direction: column; 
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    
     
   }
   .form_content {
-    justify-self: center;
-    text-align: left;
-    
+    padding: 0;
+    text-align: center;
   }
   .form_content p:first-child{
     color: #F75C4E;
@@ -462,8 +475,7 @@
   }
   .form_content p{
     color: #575455;
-    width: 85%;
-    
+    width: 100%;
   }
   
   .form_img img{
@@ -491,25 +503,22 @@
     margin-top: 15px;
     padding: 15px 30px;
     border: none;
+    width: 100%;
     border-radius: 50px;
     background-color: #1F7CFF;
     color: white;
     font-size: 16px;
-    width: 180px;
+    
   }
 
 
   .portifolio {
-    grid-area: portifolio;
-    display: grid;
-    grid-template-areas: "header_3 "
-                          "portifolio_item";
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
   }
   .header_3 {
     grid-area: header_3;
-    text-align: left;
+    text-align: center;
     
   
   }
