@@ -40,7 +40,22 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "header_2 header_2 header_2"
                         "servico servico servico";    
-  text-align: center;                  
+  text-align: center;  
+                  
+}
+.servicos p:first-child{
+  color: #F75C4E;
+  font-weight: 700;
+}
+.servicos p {
+  color: #575455;
+}
+.servicos h2{
+  font-weight: 700;
+  font-size: 2.1em;
+}
+.servicos h3{
+  color: #070F18;
 }
 .icon svg{
   position: relative;
@@ -51,8 +66,19 @@
   grid-area: header_2;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  align-content: center;
+  justify-content: center;
   
+}
+.header_2 > *{
+  margin: 10px auto;
+}
+.header_2 p{
+  width: 25%;
+}
+.servico {
+  align-self: end;
+  padding: 30px;
 }
 .servico > div{
   grid-area: servico;
@@ -60,6 +86,11 @@
   flex-direction: column;
   align-items: center;
 }
+.servico > div > h3,
+.servico > div > p{
+  margin: 5px auto;
+}
+
 .portifolio {
   grid-area: portifolio;
   display: grid;
