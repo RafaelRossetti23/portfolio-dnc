@@ -399,14 +399,13 @@
     padding: 10px;
     text-align: center;
   }
-  
- 
   .servicos{
     display: flex;
     flex-direction: column;
     text-align: center;  
     padding: 20px;
     border-bottom: 1px solid black;
+
                     
   }
   .servicos p:first-child{
